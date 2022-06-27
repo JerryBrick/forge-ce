@@ -177,7 +177,7 @@ function features.printHUD(message, optional, forcedTickCount)
     local color = {1, 0.890, 0.949, 0.992}
     if (optional) then
         drawTextBuffer = {
-            message:upper() .. "\r" .. optional:upper(),
+            message:upper() .. "|n" .. optional:upper(),
             0,
             290,
             640,
@@ -208,7 +208,7 @@ function features.printHUDRight(message, optional, forcedTickCount)
     if (optional) then
         drawTextCalls[message] = {
             buffer = {
-                message:upper() .. "\r" .. optional:upper(),
+                message:upper() .. "|n" .. optional:upper(),
                 -60,
                 380,
                 640,

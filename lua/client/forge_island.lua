@@ -109,6 +109,18 @@ function autoSaveForgeMap()
     end
 end
 
+-- Function to set up font overrides
+local function setupFontOverrides()
+    for _, font in pairs(const.fontOverrides) do
+        local fontTag = blam.getTag(font.tag, blam.tagClasses.font)
+        if(fontTag) then
+            create_font_override(fontTag.id, font.family, font.size, font.weight, font.shadowOffset.x, font.shadowOffset.y, font.offset.x, font.offset.y)
+        else
+            console_out("Failed to override " .. font.tag .. " font!")
+        end
+    end
+end
+
 function OnMapLoad()
     -- Dinamically load constants for the current Forge map
     const = require "forge.constants"
@@ -202,6 +214,9 @@ function OnMapLoad()
     else
         error("Error, This is not a compatible Forge CE map!!!")
     end
+
+    -- Set up font overrides
+    setupFontOverrides()
 end
 
 function OnPreFrame()

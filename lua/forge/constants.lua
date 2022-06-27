@@ -316,6 +316,107 @@ constants.teleportersChannels = {
     "kilo"
 }
 
+constants.fontOverrides = {
+    {
+        family = "Dev Gothic",
+        tag = "[shm]\\halo_4\\ui\\arame_numbers_heavy_12",
+        size = 10,
+        weight = 600,
+        offset = {
+            x = 0,
+            y = 10
+        },
+        shadowOffset = {
+            x = 2,
+            y = 2
+        }
+    },
+    {
+        family = "Dev Gothic",
+        tag = "[shm]\\halo_4\\ui\\arame_numbers_heavy_13",
+        size = 11,
+        weight = 600,
+        offset = {
+            x = 0,
+            y = 10
+        },
+        shadowOffset = {
+            x = 2,
+            y = 2
+        }
+    },
+    {
+        family = "Blender Pro Book",
+        tag = "[shm]\\halo_4\\ui\\blender_pro_12",
+        size = 12,
+        weight = 600,
+        offset = {
+            x = 7,
+            y = 4
+        },
+        shadowOffset = {
+            x = 2,
+            y = 2
+        }
+    },
+    {
+        family = "Blender Pro Book",
+        tag = "[shm]\\halo_4\\ui\\blender_pro_15",
+        size = 15,
+        weight = 600,
+        offset = {
+            x = 7,
+            y = 4
+        },
+        shadowOffset = {
+            x = 3,
+            y = 3
+        }
+    },
+    {
+        family = "Blender Pro Book",
+        tag = "[shm]\\halo_4\\ui\\blender_pro_18",
+        size = 18,
+        weight = 600,
+        offset = {
+            x = 7,
+            y = 4
+        },
+        shadowOffset = {
+            x = 3,
+            y = 3
+        }
+    },
+    {
+        family = "Blender Pro Book",
+        tag = "[shm]\\halo_4\\ui\\fonts\\blender_pro_medium_12",
+        size = 12,
+        weight = 600,
+        offset = {
+            x = 7,
+            y = 4
+        },
+        shadowOffset = {
+            x = 3,
+            y = 3
+        }
+    },
+    {
+        family = "Blender Pro Book",
+        tag = "[shm]\\halo_4\\ui\\fonts\\blender_pro_medium_20",
+        size = 20,
+        weight = 600,
+        offset = {
+            x = 7,
+            y = 4
+        },
+        shadowOffset = {
+            x = 3,
+            y = 3
+        }
+    }
+}
+
 dprint(string.format("Constants gathered, elapsed time: %.6f\n", os.clock() - time))
 
 return constants
